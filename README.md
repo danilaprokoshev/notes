@@ -1,5 +1,5 @@
 # Заметки - тестовое задание по стажёрской программе IT Hub «Северстали»
-
+# [![Actions Status](https://github.com/danilaprokoshev/notes/workflows/CI/badge.svg)](https://github.com/danilaprokoshev/notes/actions)
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?logo=vite&logoColor=white&style=for-the-badge)
 ![Babel](https://img.shields.io/badge/Babel-F9DC3e?style=for-the-badge&logo=babel&logoColor=black)
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
