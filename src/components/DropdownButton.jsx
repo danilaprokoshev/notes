@@ -4,8 +4,10 @@ import cn from 'classnames';
 import { Fragment } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { deleteNote, setCurrentNoteId } from '../slices/notesInfo/notesInfoSlice';
-
+import {
+  deleteNote,
+  setCurrentNoteId
+} from '../slices/notesInfo/notesInfoSlice';
 
 const DropdownButton = ({ noteId }) => {
   const dispatch = useDispatch();
@@ -21,8 +23,11 @@ const DropdownButton = ({ noteId }) => {
   return (
     <Menu as="div" className="relative inline-block">
       <div>
-        <Menu.Button className="inline-flex w-full h-full px-1 py-2 border-none hover:bg-gray-50">
-          <ChevronDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
+        <Menu.Button className="inline-flex h-full w-full border-none px-1 py-2 hover:bg-gray-50">
+          <ChevronDownIcon
+            className="h-5 w-5 text-gray-400"
+            aria-hidden="true"
+          />
         </Menu.Button>
       </div>
 
@@ -43,7 +48,7 @@ const DropdownButton = ({ noteId }) => {
                   type="button"
                   className={cn(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'text-left w-full block px-4 py-2 text-sm'
+                    'block w-full px-4 py-2 text-left text-sm'
                   )}
                   onClick={handleDeleteNote}
                 >
@@ -57,7 +62,7 @@ const DropdownButton = ({ noteId }) => {
                   type="button"
                   className={cn(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
-                    'text-left w-full block px-4 py-2 text-sm'
+                    'block w-full px-4 py-2 text-left text-sm'
                   )}
                   onClick={handleEditNote}
                 >
